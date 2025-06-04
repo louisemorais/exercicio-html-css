@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="cadastros para celulares">
+    <link rel="stylesheet" href="estiloCell.css">
+    <title>Cadastro de Celular</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de celulares</h1>
+    </header>
+    <main>
+        <form action="">
+            <label for="marca">Marca de celular</label>
+            <select name="marcaCelular" id="marca">
+                <option value="samsung">samsung</option>
+                <option value="iphone">Iphone</option>
+                <option value="motorola">Motorola</option>
+                <option value="xiaomi">Xiaomi</option>
+                <option value="lg">LG</option>
+            </select> <br><br>
+
+            <label for="modelo">Modelo de Celular:</label>
+            <input type="text" id="modelo" placeholder="modelo do seu celular"><br><br>
+
+            <label for="cor">Cor do Celular:</label>
+            <input type="text" id="cor" placeholder="cor do seu celular"><br><br>
+
+            <label for="valor">Valor do Celular</label>
+            <input type="number" id="valor" placeholder="digite o valor"><br><br>
+
+            <input type="radio" name="novo" id="novo">
+            <label for="novo">novo</label><br>
+            <input type="radio" name="usado" id="usado">
+            <label for="usado">usado</label><br><br>
+
+            <label for="information">mais informações:</label><br>
+            <textarea name="information" id="information"></textarea><br><br>
+
+            <button type="submit">Salvar</button>
+            <button type="button">Voltar</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
