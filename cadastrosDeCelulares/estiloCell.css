@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    background: linear-gradient(1350deg, #0f2027, #3b2768, #2c5364) ;
+}
+
+
+.borda{
+    background: linear-gradient(135deg, #063950, #3b2043, #2c5364);
+    border-radius: 60px;
+    box-shadow: 0 0 120px #3b204399;
+    overflow: hidden;
+    resize: none;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(19, 10, 72, 0.878);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    color: rgb(220, 220, 238);
+}
+
+main{
+    padding: 20px;
+}
+
+form{
+    margin-left: 210px;
+}
+
+form label{
+    color: rgb(239, 229, 229);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.opçoesMarca{
+    margin-left: 10px;
+    border-radius: 8px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+.marcaCell input{
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 350px;
+    height: 30px;
+}
+
+
+input::placeholder{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.botoes{
+    margin-left: 85px;
+}
+
+.botoes input{
+    margin-left: 15px;
+}
+
+.maisInformacoes label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.maisInformacoes textarea{
+    margin-left: 10px;
+    width: 350px;    
+    height: 150px;    
+    resize: none;     
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+button{
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    background-color:#00f7ff33;
+    border-color: #00f7ff33;
+    box-shadow: 0 0 20px #46919433 ,inset 0 0 5px #00f7ff33;
+    transition: 0.3s ease;
+    color: #00f7ff;
+    font-weight: bolder;
+    font-size: 19px;
+    
+}
+
+button:hover{
+    background-color: rgb(124, 37, 95);
+}
+
+.grupoBotao{
+    display: flex;
+    margin-left: 80px;
+    gap: 15px;
+    margin-bottom: 10px;
+
+}

@@ -5,45 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="cadastros para celulares">
     <link rel="stylesheet" href="estiloCell.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Cadastro de Celular</title>
 </head>
 <body>
-    <header>
-        <h1>Cadastro de celulares</h1>
-    </header>
-    <main>
-        <form action="">
-            <label for="marca">Marca de celular</label>
-            <select name="marcaCelular" id="marca">
-                <option value="samsung">samsung</option>
-                <option value="iphone">Iphone</option>
-                <option value="motorola">Motorola</option>
-                <option value="xiaomi">Xiaomi</option>
-                <option value="lg">LG</option>
-            </select> <br><br>
+    <div class="borda">
+        <header>
+            <h1>Cadastro de celulares</h1>
+        </header>
+        <main>
+            <form action="">
+                <div class="marcaCell">
+                    <label for="marca">Marca de Celular</label>
+                    <select class="opçoesMarca" name="marcaCelular" id="marca">
+                        <option value="samsung">samsung</option>
+                        <option value="iphone">Iphone</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="xiaomi">Xiaomi</option>
+                        <option value="lg">LG</option>
+                    </select> <br><br>
+                
 
-            <label for="modelo">Modelo de Celular:</label>
-            <input type="text" id="modelo" placeholder="modelo do seu celular"><br><br>
+                
+                    <label for="modelo">Modelo de Celular:</label><br>
+                    <input type="text" id="modelo" placeholder="modelo do seu celular"><br><br>
+                
 
-            <label for="cor">Cor do Celular:</label>
-            <input type="text" id="cor" placeholder="cor do seu celular"><br><br>
+                
+                    <label for="cor">Cor do Celular:</label><br>
+                    <input type="text" id="cor" placeholder="cor do seu celular"><br><br>
+                
 
-            <label for="valor">Valor do Celular</label>
-            <input type="number" id="valor" placeholder="digite o valor"><br><br>
+                
+                    <label for="valor">Valor do Celular</label><br>
+                    <input type="number" id="valor" placeholder="digite o valor"><br><br>
+                </div>
 
-            <input type="radio" name="novo" id="novo">
-            <label for="novo">novo</label><br>
-            <input type="radio" name="usado" id="usado">
-            <label for="usado">usado</label><br><br>
+                <div class="botoes">
+                    <input type="radio" name="estado" id="novo">
+                    <label for="novo">novo</label>
+                    <input type="radio" name="estado" id="usado">
+                    <label for="usado">usado</label><br><br>
+                </div>
 
-            <label for="information">mais informações:</label><br>
-            <textarea name="information" id="information"></textarea><br><br>
+                <div class="maisInformacoes">
+                    <label for="information" >mais informações:</label><br>
+                    <textarea name="information" id="information" ></textarea><br><br>
+                </div>
 
-            <button type="submit">Salvar</button>
-            <button type="button">Voltar</button>
+                <div class="grupoBotao">
+                    <button type="submit" class="salvar">Salvar</button>
+                    <button type="button" class="voltar">Voltar</button>
+                </div>
 
-        </form>
-    </main>
+            </form>
+        </main>
+    </div>
     
 </body>
 </html>
