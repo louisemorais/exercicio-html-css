@@ -9,44 +9,52 @@
 </head>
 
 <body>
-  <form name="calc">
-    <table>
-      <tr>
-        <td colspan="4">
-          <input type="text" name="display" readonly>
-        </td>
-      </tr>
-      <tr>
-        <td><button type="button" onclick="calc.display.value += '7'">7</button></td>
-        <td><button type="button" onclick="calc.display.value += '8'">8</button></td>
-        <td><button type="button" onclick="calc.display.value += '9'">9</button></td>
-        <td><button type="button" onclick="calc.display.value += '/'">/</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" onclick="calc.display.value += '4'">4</button></td>
-        <td><button type="button" onclick="calc.display.value += '5'">5</button></td>
-        <td><button type="button" onclick="calc.display.value += '6'">6</button></td>
-        <td><button type="button" onclick="calc.display.value += '*'">x</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" onclick="calc.display.value += '1'">1</button></td>
-        <td><button type="button" onclick="calc.display.value += '2'">2</button></td>
-        <td><button type="button" onclick="calc.display.value += '3'">3</button></td>
-        <td><button type="button" onclick="calc.display.value += '-'">-</button></td>
-      </tr>
-      <tr>
-        <td><button type="button" onclick="calc.display.value += '0'">0</button></td>
-        <td><button type="button" onclick="calc.display.value += '.'">,</button></td>
-        <td><button type="button" onclick="calc.display.value = ''">C</button></td>
-        <td><button type="button" onclick="calc.display.value += '+'">+</button></td>
-      </tr>
-      <tr>
-        <td colspan="4">
-          <button type="button" onclick="calc.display.value = eval(calc.display.value.replace(',', '.'))">=</button>
-        </td>
-      </tr>
-    </table>
-  </form>
+  <header>
+    <h1>
+      Calculadora
+    </h1>
+  </header>
+  
+  <main>
+    <form name="calc">
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" name="display" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="calc.display.value += '7'">7</button></td>
+          <td><button type="button" onclick="calc.display.value += '8'">8</button></td>
+          <td><button type="button" onclick="calc.display.value += '9'">9</button></td>
+          <td><button type="button" onclick="calc.display.value += '/'">/</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="calc.display.value += '4'">4</button></td>
+          <td><button type="button" onclick="calc.display.value += '5'">5</button></td>
+          <td><button type="button" onclick="calc.display.value += '6'">6</button></td>
+          <td><button type="button" onclick="calc.display.value += '*'">x</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="calc.display.value += '1'">1</button></td>
+          <td><button type="button" onclick="calc.display.value += '2'">2</button></td>
+          <td><button type="button" onclick="calc.display.value += '3'">3</button></td>
+          <td><button type="button" onclick="calc.display.value += '-'">-</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" onclick="calc.display.value += '0'">0</button></td>
+          <td><button type="button" onclick="calc.display.value += '.'">,</button></td>
+          <td><button type="button" onclick="calc.display.value = ''">C</button></td>
+          <td><button type="button" onclick="calc.display.value += '+'">+</button></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <button type="button" onclick="calc.display.value = eval(calc.display.value.replace(',', '.'))">=</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
 
 </body>
 </html> 
