@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 10px;
+}
+
+.borda{
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 200px;
+}
+
+.cabeçalho{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight:bold;
+    font-size: medium;
+    height: 40px;
+    background-color: rgb(106, 166, 218);
+    color: white;
+
+}
+
+.corpo{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color:rgb(215, 211, 206);
+}
