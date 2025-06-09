@@ -1,33 +1,81 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 header{
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-top: 250px;
-    margin-bottom: 10px;
+    padding: 1rem;
+    color: #00ffd5;
+    text-shadow: 0 0 5px #00ffd5, 0 0 15px #00ffd5;
+}
+
+main{
+    padding-left: 350px;
 }
 
 .borda{
     border-collapse: collapse;
     width: 80%;
-    margin-left: 200px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 255, 213, 0.2);
 }
 
-.cabeçalho{
-    font-family: 'Poppins', sans-serif;
+.borda th, td{
+    padding: 10px;
+    width: 1000px;
+    border: 1px solid #2e2e2e;
     text-align: center;
-    font-weight:bold;
-    font-size: medium;
-    height: 40px;
-    background-color: rgb(106, 166, 218);
-    color: white;
-
+    color: #e0e0e0;
 }
 
-.corpo{
+.borda th {
+    background-color: #00ffd5;
+    color: #293147;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: none;
+}
+
+.borda tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.borda tbody tr:hover td{
+    background-color: #45645f;
+    color: #e8f1c8;
+    text-shadow: 0 0 1.5px #e8f1c8, 0 0 1.5px #e8f1c8;
+    transition: all 0.3s ease-in-out;
+}
+
+.borda td {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+    font-weight:550;
+    word-wrap: break-word;      
+    word-break: break-word;   
+    white-space: normal; 
+}
+
+.corpotb{
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
