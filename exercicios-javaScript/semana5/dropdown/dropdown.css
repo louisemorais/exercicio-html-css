@@ -1,0 +1,11 @@
+  #menu {
+    position: absolute;
+    border: 1px solid;
+    padding: 0.5em;
+    list-style: none;
+    margin-top: 5px;
+  }
+
+  .esconder {
+    display: none;
+  }
